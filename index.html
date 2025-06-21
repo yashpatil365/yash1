@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Your Father</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 100px;
+      background-color: #121212; /* Dark mode */
+      color: white;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    h1 {
+      color: white;
+    }
+    .btn {
+      padding: 15px 30px;
+      margin: 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    #result {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #00ff99;
+    }
+    .light-mode {
+      background-color: #f0f8ff !important;
+      color: #222 !important;
+    }
+    .light-mode h1 {
+      color: #222 !important;
+    }
+    .light-mode #result {
+      color: #2e8b57 !important;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Choose Who is Your Father</h1>
+  
+  <button class="btn" onclick="showResult()">Button 1</button>
+  <button class="btn" onclick="showResult()">Button 2</button>
+
+  <div id="result"></div>
+
+  <script>
+    function showResult() {
+      document.body.classList.add("light-mode");
+      document.getElementById("result").innerText = "YASH PATIL.";
+    }
+  </script>
+
+</body>
+</html>
+
